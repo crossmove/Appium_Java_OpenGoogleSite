@@ -18,8 +18,13 @@ public class ChromeExample {
 	@Test
 	public static void OpenChromeBrowser() throws Exception {				
 		
+		//Start appium server
+		
 		//Install TestNG
 		//https://www.techbeamers.com/install-testng-in-eclipse-ide/#method3
+		
+		//How to Run
+		//Right click inside any test methods --> Run as --> TestNG Test
 		
 		DesiredCapabilities cap = new DesiredCapabilities();
 		cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
@@ -42,8 +47,8 @@ public class ChromeExample {
 		appDriver = new AppiumDriver<MobileElement>(url,cap);		
 		System.out.print("Opened Chrome Browser");
 		
-		appDriver.get("https://www.gmail.com");
-		appDriver.findElement(By.name("q")).sendKeys("Mobile");				
+		appDriver.get("https://www.india.com");
+		appDriver.findElement(By.id("menu-item-1635980"));			
 				
 	}
 

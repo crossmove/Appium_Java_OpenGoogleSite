@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18547" started-at="2020-04-21T12:29:15Z" finished-at="2020-04-21T12:29:33Z">
+  <suite name="Default suite" duration-ms="23755" started-at="2020-04-21T12:52:03Z" finished-at="2020-04-21T12:52:27Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18547" started-at="2020-04-21T12:29:15Z" finished-at="2020-04-21T12:29:33Z">
-      <class name="test1.Calculatortt">
-        <test-method status="FAIL" signature="OpenCalculator()[pri:0, instance:test1.Calculatortt@4501b7af]" name="OpenCalculator" duration-ms="18439" started-at="2020-04-21T16:29:15Z" finished-at="2020-04-21T16:29:33Z">
+    <test name="Default test" duration-ms="23755" started-at="2020-04-21T12:52:03Z" finished-at="2020-04-21T12:52:27Z">
+      <class name="test1.ChromeExample">
+        <test-method status="FAIL" signature="OpenChromeBrowser()[pri:0, instance:test1.ChromeExample@4501b7af]" name="OpenChromeBrowser" duration-ms="23706" started-at="2020-04-21T16:52:03Z" finished-at="2020-04-21T16:52:27Z">
           <exception class="org.openqa.selenium.InvalidArgumentException">
             <message>
               <![CDATA[invalid argument: invalid locator
@@ -16,8 +16,8 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'DESKTOP-NVR4121', ip: '192.168.1.155', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
 Driver info: io.appium.java_client.AppiumDriver
 Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: Chrome, chromedriverExecutableDir: D:\picx, databaseEnabled: false, desired: {browserName: Chrome, chromedriverExecutableDir: D:\picx, deviceName: vivo 1920, newCommandTimeout: 60, platformName: android, platformVersion: 9, udid: 575b6cf1}, deviceApiLevel: 28, deviceManufacturer: vivo, deviceModel: vivo 1920, deviceName: 575b6cf1, deviceScreenDensity: 480, deviceScreenSize: 1080x2340, deviceUDID: 575b6cf1, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 84, takesScreenshot: true, udid: 575b6cf1, viewportRect: {height: 2057, left: 0, top: 84, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: bb05caed-effe-4298-81c8-359fd727bf49
-*** Element info: {Using=name, value=q}]]>
+Session ID: 5eaf4950-d879-4530-bc3f-64d58e9ccbfb
+*** Element info: {Using=id, value=menu-item-1635980}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.InvalidArgumentException: invalid argument: invalid locator
@@ -26,8 +26,8 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'DESKTOP-NVR4121', ip: '192.168.1.155', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
 Driver info: io.appium.java_client.AppiumDriver
 Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: Chrome, chromedriverExecutableDir: D:\picx, databaseEnabled: false, desired: {browserName: Chrome, chromedriverExecutableDir: D:\picx, deviceName: vivo 1920, newCommandTimeout: 60, platformName: android, platformVersion: 9, udid: 575b6cf1}, deviceApiLevel: 28, deviceManufacturer: vivo, deviceModel: vivo 1920, deviceName: 575b6cf1, deviceScreenDensity: 480, deviceScreenSize: 1080x2340, deviceUDID: 575b6cf1, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 60, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 84, takesScreenshot: true, udid: 575b6cf1, viewportRect: {height: 2057, left: 0, top: 84, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: bb05caed-effe-4298-81c8-359fd727bf49
-*** Element info: {Using=name, value=q}
+Session ID: 5eaf4950-d879-4530-bc3f-64d58e9ccbfb
+*** Element info: {Using=id, value=menu-item-1635980}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -43,14 +43,14 @@ Session ID: bb05caed-effe-4298-81c8-359fd727bf49
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
 	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
 	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByName(DefaultGenericMobileDriver.java:117)
-	at io.appium.java_client.AppiumDriver.findElementByName(AppiumDriver.java:1)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
 	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at test1.Calculatortt.OpenCalculator(Calculatortt.java:44)
+	at test1.ChromeExample.OpenChromeBrowser(ChromeExample.java:49)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -81,8 +81,8 @@ Session ID: bb05caed-effe-4298-81c8-359fd727bf49
           </exception> <!-- org.openqa.selenium.InvalidArgumentException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OpenCalculator -->
-      </class> <!-- test1.Calculatortt -->
+        </test-method> <!-- OpenChromeBrowser -->
+      </class> <!-- test1.ChromeExample -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
