@@ -21,7 +21,7 @@ public class ChromeExample {
 
 	//Any of the below code works fine
 	//static AppiumDriver<MobileElement> appDriver;	
-	static WebDriver appDriver;
+	static WebDriver driver;
 		
 	@Test
 	public static void OpenChromeBrowser() throws Exception {				
@@ -73,14 +73,15 @@ public class ChromeExample {
 		//cap.setCapability("locale", "en_US");
 			         
 		URL url = new URL("http://127.0.0.1:4723/wd/hub");		
-		appDriver = new AppiumDriver<MobileElement>(url,cap);		
+		driver = new AppiumDriver<MobileElement>(url,cap);		
 		System.out.print("Opened Chrome Browser");
 		
-		appDriver.get("https://www.google.com");		
-		WebElement elem = appDriver.findElement(By.name("q"));
-		//WebElement elem1 = appDriver.findElement(By.name("q"));  this code also works fine
-		elem.sendKeys("learn");
-		elem.sendKeys(Keys.ENTER);				
+		driver.get("https://opensource-demo.orangehrmlive.com/index.php/auth/validateCredentials");
+	    driver.findElement(By.xpath("//div[@id='divUsername']/span")).click();
+	    driver.findElement(By.id("txtUsername")).clear();
+	    driver.findElement(By.id("txtUsername")).sendKeys("pradeepkumar");
+	    driver.findElement(By.id("txtPassword")).clear();
+	    driver.findElement(By.id("txtPassword")).sendKeys("admin");		
 	}
 
 }
